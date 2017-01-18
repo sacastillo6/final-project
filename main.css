@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Global Overrides
+  ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/* ==========================================================================
+   Author's custom styles
+  ========================================================================== */
+
+/* 
+    SITE COLORS:
+    White - #ffffff
+    Light Grey -
+    Dark Grey - #3B3A3A
+    Grey/Black(text color) -
+    Yellow -
+    Red -
+*/
+
+/* Global
+   ================================================================ */
+body {
+ font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #3B3A3A;
+  background: #fff;
+}
+
+/* Layout
+   ================================================================ */
+/* Make sure this is here, even though it wasn't implied on the design. This is an opportunity to educate designers on designing for screens. */
+
+
+.Banner{
+
+}
+
+.LatestPost{
+
+}
+
+.Topic{
+
+}
+
+.Instagram{
+
+}
+
+.Subscribe{
+
+}
+
+
+
+
+
+
+
