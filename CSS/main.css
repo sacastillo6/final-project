@@ -54,6 +54,8 @@ a:hover{
     border-top: 1px solid #000;
     margin-bottom: 15px;
     display: block;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /* Layout
@@ -92,13 +94,15 @@ a:hover{
   float: left;
   font-family: 'Playfair Display', serif;
   font-weight:900;
+  padding-left: 10px;
 }
+
 
 /*----- MAIN NAV -----*/
 
 .MainNav{
   margin: 0;
-  padding: 0;
+  padding-right: 10px;
   float: right;
 }
 
@@ -136,6 +140,12 @@ a:hover{
 }
 
 
+/* SIDEBAR ===============*/
+  
+/*.menu-wrap {
+  display: none;
+}*/
+
 /* BANNER  ================================================================ */
 .Banner{
   padding: 1.875em 0;
@@ -146,9 +156,12 @@ a:hover{
   background-position: center center;
   background-repeat: no-repeat;
   text-align: center;
-  margin: 0 auto;
+  margin-top:60px;
+  margin-left: auto;
+  margin-right: auto;
   width: auto;
   clear:both;
+  height:550px;
 }
 
 .Banner-blurb{
@@ -184,7 +197,7 @@ a:hover{
   text-transform: uppercase;
   color: #ffffff;
   padding: 1.250em;
-  width: 20em;
+  width: 45%;
   font-weight: bold;
   border: solid #ffffff 0.125em;
   border-radius: 0.625em;
@@ -227,6 +240,8 @@ a:hover{
 
 .Topic{
   margin-top: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
 
 }
 
@@ -314,10 +329,7 @@ padding: 1.875em 0;
 
 
 /* SUBSCRIBE  ================================================================ */
-.subscribe{
-  background-color: #900C3F;
-  height: 700px;
-}
+
 
 .Banner2{
   padding: 1.875em 0;
@@ -330,14 +342,16 @@ padding: 1.875em 0;
   background-repeat: no-repeat;
   /* Cover the entire background area */
   /*// background-size: cover;*/
+  padding: 20px;
 }
 
-form {
+#form1 {
   background: #900C3F;
   color: #FDFCFB;
   text-align: center;
+  vertical-align: top;
   width: 600px;
-  margin: 17% auto;
+  
 }
 
 .header {
@@ -358,6 +372,7 @@ form {
 .input {
   display: flex;
   align-items: center;
+  padding:15px;
 }
 
 
@@ -438,11 +453,109 @@ input:focus {
   height:1em;
 }
 
+
+
+/** CONTACT ============================**/
+
+
+.Banner3{
+  padding: 1.875em 0;
+  color: #ffffff;
+  background-color:#900C3F;
+  background-size: cover;
+  background-position: center center;
+  /* Specific positioning based on pixels */
+  /*// background-position: center -80px;*/
+  background-repeat: no-repeat;
+  /* Cover the entire background area */
+  /*// background-size: cover;*/
+  padding: 20px;
+}
+
+#form2 {
+  background: #900C3F;
+  color: #FDFCFB;
+  text-align: center;
+  vertical-align: top;
+  width: 600px;
+  
+}
+
+.header2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+
+.description2 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  margin: -2px 0 45px;
+}
+
+
+.input2 {
+  display: flex;
+  align-items: center;
+  padding:15px;
+}
+
+
+.button2 {
+  height: 44px;
+  border: none;
+}
+
+  
+#email2 {
+  width: 75%;
+  background: #FDFCFB;
+  font-family: inherit;
+  color: #737373;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px 0 0 5px;
+}
+
+
+#submit2 {
+  width: 25%;
+  height: 46px;
+  background: #E86C8D;
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+  letter-spacing: 1px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+}
+
+#submit2:hover {
+  background: #d45d7d;
+}
+  
+input:focus {
+  outline: none;
+  outline: 2px solid #E86C8D;
+  box-shadow: 0 0 2px #E86C8D;
+}
+
+
 /** RESPONSIVE STYLES ===================**/
 
 
 @media (min-width: 600px) and (max-width: 1023px) {
   
+
+/** SIDEBAR========*/
+  
+/*.menu-wrap {
+  display: none;
+}*/
+
 /** BANNER **/
 
   .Banner {
@@ -519,9 +632,115 @@ input:focus {
   text-align: center;
 }
 
+.menu2{
+  display: none;
+}
+
 
 @media (max-width: 599px) {
   
+/*LOGO*/
+
+.logo{
+  float: left;
+}
+
+/*MAIN NAV*/
+
+.MainNav {
+  display: none;
+}
+
+/** SIDEBAR========*/
+  
+.menu-wrap {
+    background-color: #900c3f;
+    color:#ffffff;
+    text-transform: uppercase;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 280px;
+    transform: translateX(-108%);
+    font-size: 1em;
+    font-weight: 700;
+    overflow: auto;
+    transition: .25s;
+    z-index: 10;
+}
+
+.Menu-wrap .menu2 ul{
+  list-style: none;
+}
+
+ul.menu2 {
+  list-style: none;
+}
+
+.Menu-wrap ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu-show {
+    margin-top:60px;
+    list-style: none;
+    margin-left: 0;
+    box-shadow: 4px 2px 15px 1px #B9ADAD;
+    transform: translateX(-6%);
+}
+
+.menu2-show{
+  display: block;
+}
+
+.Site {
+    transition: margin-right .5s;
+    padding: 20px;
+}
+
+
+/* HAMBURGER=======*/
+
+.hamburger-icon{
+  width: 2.5rem;
+  float: right;
+  margin-top: 10px;
+  margin-right:10px;
+}
+
+.line{
+  width: 2.5rem;
+  height: .3125rem;
+  background: rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+  border-radius: 2.5rem;
+  margin-bottom: .52em;
+  opacity: 1;
+  /* 1. Set the transition property on the .line class */
+  transition: all 1s ease;
+}
+
+/* Second line */
+.active .line:nth-child(2) {
+  /* 2. When the active class is added to the .hamburger-icon, fade the middle line out (hint: you can use the 'opacity' property). */
+  opacity: 0;
+ }
+
+/* Top line */
+.active .line:first-child {
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+}
+
+/* Bottom line */
+.active .line:last-child {
+  transform: rotate(-45deg);
+  transform-origin: 0 5px;
+}
+
+
 
 /** BANNER **/
 
@@ -529,19 +748,21 @@ input:focus {
     clear:both;
     width: 96%;
     margin: 0 2%;
-    text-align: center;
+    height:450px;
   }
 
   .Banner-blurb {
     clear:both;
     width: 100%;
-    display: inline-block;
-    vertical-align: top;
   }
 
   .Banner .Boundary {
     height: auto;
     clear: both;
+  }
+
+  .button{
+    background-color:#900c3f;
   }
 
 
@@ -586,11 +807,14 @@ input:focus {
   text-align: center;
 }
 
-form {
+#form1 {
   width: 96%;
 }
 
 button {
   height: auto;
+  width: 500px;
 }
+
+  
 
