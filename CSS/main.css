@@ -3,6 +3,7 @@
   ========================================================================== */
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .clearfix:after {
@@ -32,7 +33,6 @@ body {
   font-size: 1em;
   font-weight: 400;
   color:#17202A;
-  margin-top: 60px;
 }
 
 a {
@@ -63,10 +63,11 @@ a:hover{
 /* Make sure this is here, even though it wasn't implied on the design. This is an opportunity to educate designers on designing for screens. */
 
 
-.Site{
+/*.Site{
   // width: 60em;
   // margin: 0 auto;
 }
+*/
 
 .Boundary{
   width: 60em;
@@ -76,17 +77,19 @@ a:hover{
 
 /* HEADER  ================================================================ */
 
-.Header {
+Header {
   position: fixed;
   top:0;
   right: 0;
   left: 0;
   background-color: #ffffff;
   z-index: 9999;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000; 
+  margin: 0;
+  overflow-x: hidden;
 }
 
-.Header .logo{
+Header .logo{
   color: #17202A;
   text-decoration: none;
   font-size: 2em;
@@ -104,6 +107,7 @@ a:hover{
   margin: 0;
   padding-right: 10px;
   float: right;
+  overflow: hidden;
 }
 
 .MainNav ul{
@@ -138,13 +142,6 @@ a:hover{
 .Header a:hover{
   color: #900C3F;
 }
-
-
-/* SIDEBAR ===============*/
-  
-/*.menu-wrap {
-  display: none;
-}*/
 
 /* BANNER  ================================================================ */
 .Banner{
@@ -240,9 +237,8 @@ a:hover{
 
 .Topic{
   margin-top: 60px;
-  margin-left: 10px;
+  margin-left:10px;
   margin-right: 10px;
-
 }
 
 .topics {
@@ -292,7 +288,7 @@ img {
 
 @media (min-width: 1024px) {
   .container {
-    width: 960px;
+    width: 96%;
     margin: 0 auto;
   }
   .container:after {
@@ -319,17 +315,10 @@ text-align: center;
 padding: 1.875em 0;
   background-size: cover;
   background-position: center center;
-  /* Specific positioning based on pixels */
-  /*// background-position: center -80px;*/
   background-repeat: no-repeat;
-  /* Cover the entire background area */
-  /*// background-size: cover;*/
 }
 
-
-
 /* SUBSCRIBE  ================================================================ */
-
 
 .Banner2{
   padding: 1.875em 0;
@@ -337,11 +326,7 @@ padding: 1.875em 0;
   background-color:#900C3F;
   background-size: cover;
   background-position: center center;
-  /* Specific positioning based on pixels */
-  /*// background-position: center -80px;*/
   background-repeat: no-repeat;
-  /* Cover the entire background area */
-  /*// background-size: cover;*/
   padding: 20px;
 }
 
@@ -351,7 +336,6 @@ padding: 1.875em 0;
   text-align: center;
   vertical-align: top;
   width: 600px;
-  
 }
 
 .header {
@@ -360,7 +344,6 @@ padding: 1.875em 0;
   letter-spacing: 5px;
 }
 
-
 .description {
   font-size: 14px;
   letter-spacing: 1px;
@@ -368,19 +351,16 @@ padding: 1.875em 0;
   margin: -2px 0 45px;
 }
 
-
 .input {
   display: flex;
   align-items: center;
   padding:15px;
 }
 
-
 .button {
   height: 44px;
   border: none;
 }
-
   
 #email {
   width: 75%;
@@ -391,7 +371,6 @@ padding: 1.875em 0;
   text-indent: 5%;
   border-radius: 5px 0 0 5px;
 }
-
 
 #submit {
   width: 25%;
@@ -406,12 +385,10 @@ padding: 1.875em 0;
   transition: background .3s ease-in-out;
 }
   
-
 #submit:hover {
   background: #d45d7d;
 }
   
-
 input:focus {
   outline: none;
   outline: 2px solid #E86C8D;
@@ -420,22 +397,10 @@ input:focus {
 
 /* FOOTER  ================================================================ */
 
-.FooterNav{
+footer > p{
   margin: 0;
   padding: 0;
   text-align: center;
-}
-
-.FooterNav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.FooterNav ul li.copyright {
-  text-align: center; 
-  margin: 0 0 0 0;
-  padding: 0;
   text-decoration: none;
   text-transform: uppercase;
   display: block;
@@ -444,91 +409,82 @@ input:focus {
   color: #17202A;
 }
 
-
-.FooterNav ul li a:hover{
+footer a:hover{
   color: #ffffff;
 }
 
-.FooterNav img{
-  height:1em;
+
+/** ABOUT ============================**/
+
+.aboutme {
+  margin-top:80px;
+  margin-bottom: 80px;
+  margin-left: 8%;
+  margin-right: 30%;
 }
 
+.aboutme > h1{
+  text-transform: uppercase;
+}
+
+.about >p{
+  float:left;
+}
+
+.aboutme > img{
+  float:right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  position:relative;
+}
 
 
 /** CONTACT ============================**/
 
 
 .Banner3{
-  padding: 1.875em 0;
-  color: #ffffff;
-  background-color:#900C3F;
-  background-size: cover;
-  background-position: center center;
-  /* Specific positioning based on pixels */
-  /*// background-position: center -80px;*/
-  background-repeat: no-repeat;
-  /* Cover the entire background area */
-  /*// background-size: cover;*/
-  padding: 20px;
+  margin:10%;
+}
+
+.Banner3 > h1 {
+  text-transform: uppercase;
 }
 
 #form2 {
-  background: #900C3F;
-  color: #FDFCFB;
-  text-align: center;
   vertical-align: top;
-  width: 600px;
-  
+  width: 80%;
+  float:left;
 }
 
-.header2 {
-  font-size: 35px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
+.input2{
+  font-family: playfair display;
 }
-
-
-.description2 {
-  font-size: 14px;
-  letter-spacing: 1px;
-  line-height: 1.3em;
-  margin: -2px 0 45px;
-}
-
-
-.input2 {
-  display: flex;
-  align-items: center;
-  padding:15px;
-}
-
 
 .button2 {
   height: 44px;
   border: none;
 }
-
   
 #email2 {
-  width: 75%;
+  width: 80%;
   background: #FDFCFB;
   font-family: inherit;
   color: #737373;
   letter-spacing: 1px;
-  text-indent: 5%;
+  text-indent: 2%;
   border-radius: 5px 0 0 5px;
 }
 
 
 #submit2 {
-  width: 25%;
   height: 46px;
+  width: 80%;
   background: #E86C8D;
   font-family: inherit;
   font-weight: bold;
   color: inherit;
   letter-spacing: 1px;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px;
   cursor: pointer;
   transition: background .3s ease-in-out;
 }
@@ -543,18 +499,92 @@ input:focus {
   box-shadow: 0 0 2px #E86C8D;
 }
 
+/* SHOP ========== */
+
+.shop {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.shop > h1 {
+  clear: both;
+  text-align: left;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.shoptitle {
+  font-family: Playfair Display;
+}
+
+.shop a:hover{
+  color: #900c3f;
+}
+
+/* PRODUCT ================================ */
+
+.product {
+  margin: 100px;
+  margin-left: 10%;
+  text-align: center;
+  position: center;
+}
+
+.Button4:hover{
+  background: #ffffff;
+  color: black;
+  border: solid #900C3F 0.125em;
+}
+
+.Button4{
+  font-size: 1em;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #900c3f;
+  color: #ffffff;
+  padding: 1.250em;
+  width: 45%;
+  font-weight: bold;
+  border: solid #ffffff 0.125em;
+  border-radius: 0.625em;
+  display: inline-block;
+  margin-top:1.250em;
+}
+
+/* BLOG =================================*/
+
+.blog {
+  margin-top:80px;
+  margin-bottom: 80px;
+  margin-left: 8%;
+  margin-right: 30%;
+}
+
+.blog > h1{
+  text-transform: uppercase;
+}
+
+.blog >p{
+  float:left;
+}
+
+.author {
+  font-family: playfair display;
+}
+
+.blog> img{
+  float: left;
+  clear:both;
+  display:block;
+}
+
 
 /** RESPONSIVE STYLES ===================**/
 
 
 @media (min-width: 600px) and (max-width: 1023px) {
-  
-
-/** SIDEBAR========*/
-  
-/*.menu-wrap {
-  display: none;
-}*/
 
 /** BANNER **/
 
@@ -573,9 +603,6 @@ input:focus {
     height: auto;
     clear: both;
   }
-
-/* LATEST POST  ================================================================ */
-
  
 
 /** TOPICS **/
@@ -636,10 +663,19 @@ input:focus {
   display: none;
 }
 
+/* ABOUT ME */
+
+.aboutme {
+  margin-top:80px;
+  margin-bottom: 80px;
+  margin-left: 8%;
+  margin-right: 10%;
+}
+
 
 @media (max-width: 599px) {
   
-/*LOGO*/
+/* LOGO */
 
 .logo{
   float: left;
@@ -670,17 +706,17 @@ input:focus {
     z-index: 10;
 }
 
-.Menu-wrap .menu2 ul{
-  list-style: none;
-}
-
 ul.menu2 {
   list-style: none;
 }
 
+.menu2 > li > a {
+  color: #ffffff;
+}
+
 .Menu-wrap ul li a{
-  text-decoration: none;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .menu-show {
@@ -699,7 +735,6 @@ ul.menu2 {
     transition: margin-right .5s;
     padding: 20px;
 }
-
 
 /* HAMBURGER=======*/
 
@@ -740,8 +775,6 @@ ul.menu2 {
   transform-origin: 0 5px;
 }
 
-
-
 /** BANNER **/
 
   .Banner {
@@ -764,7 +797,6 @@ ul.menu2 {
   .button{
     background-color:#900c3f;
   }
-
 
 /** TOPICS **/
 
@@ -816,5 +848,12 @@ button {
   width: 500px;
 }
 
-  
+/* ABOUT ME */
+
+.aboutme {
+  margin-top:80px;
+  margin-bottom: 80px;
+  margin-left: 8%;
+  margin-right: 8%;
+}
 
