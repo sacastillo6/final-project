@@ -672,6 +672,12 @@ input:focus {
   margin-right: 10%;
 }
 
+.blog {
+  margin-top:80px;
+  margin-bottom: 80px;
+  margin-left: 8%;
+  margin-right: 8%;
+}
 
 @media (max-width: 599px) {
   
@@ -781,7 +787,7 @@ ul.menu2 {
     clear:both;
     width: 96%;
     margin: 0 2%;
-    height:450px;
+    height:auto;
   }
 
   .Banner-blurb {
@@ -855,5 +861,28 @@ button {
   margin-bottom: 80px;
   margin-left: 8%;
   margin-right: 8%;
+}
+
+.blog {
+  margin-top:80px;
+  margin-bottom: 80px;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+
+@media (max-width: 420px) {
+
+.Banner-blurb-2 {
+
+}
+
+.Banner-blurb{
+  width: 100%;
+  text-align: center;
+height:auto;
+  display: inline-block;
+  vertical-align: top;
+
 }
 
