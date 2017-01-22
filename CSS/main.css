@@ -341,7 +341,7 @@ padding: 1.875em 0;
   color: #FDFCFB;
   text-align: center;
   vertical-align: top;
-  width: 600px;
+  width: auto;
 }
 
 .header {
@@ -856,7 +856,7 @@ ul.menu2 {
 .Banner2 {
   clear:both;
   width: 96%;
-  margin: 0 2%;
+  margin: 0 2% 2% 0;
   text-align: center;
 }
 
