@@ -603,7 +603,13 @@ input:focus {
     height: auto;
     clear: both;
   }
- 
+
+  .product {
+  margin-top: 100px;
+  text-align: center;
+  position: center;
+}
+
 
 /** TOPICS **/
 
@@ -648,7 +654,7 @@ input:focus {
     float: right;
     width: 56%;
   }
-}
+
 
 /* SUBSCRIBE  ================================================================ */
 
@@ -677,6 +683,8 @@ input:focus {
   margin-bottom: 80px;
   margin-left: 8%;
   margin-right: 8%;
+}
+
 }
 
 @media (max-width: 599px) {
@@ -834,7 +842,7 @@ ul.menu2 {
   .image, .copy {
     text-align: center;
   }
-}
+
 
 /* SUBSCRIBE  ================================================================ */
 
@@ -863,6 +871,8 @@ button {
   margin-right: 8%;
 }
 
+/* BLOG */
+
 .blog {
   margin-top:80px;
   margin-bottom: 80px;
@@ -870,12 +880,17 @@ button {
   margin-right: 8%;
 }
 
+/* PRODUCT*/
 
-@media (max-width: 420px) {
-
-.Banner-blurb-2 {
+.product {
+  margin: 100px 10px 10px 0;
+  text-align: center;
+  position: center;
+}
 
 }
+
+@media (max-width: 420px) {
 
 .Banner-blurb{
   width: 100%;
@@ -883,6 +898,9 @@ button {
 height:auto;
   display: inline-block;
   vertical-align: top;
+}
+
+
 
 }
 
