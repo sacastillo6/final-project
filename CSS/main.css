@@ -143,6 +143,12 @@ Header .logo{
   color: #900C3F;
 }
 
+/** SIDEBAR========*/
+  
+.menu-wrap {
+  display: none;
+}
+
 /* BANNER  ================================================================ */
 .Banner{
   padding: 1.875em 0;
@@ -153,7 +159,7 @@ Header .logo{
   background-position: center center;
   background-repeat: no-repeat;
   text-align: center;
-  margin-top:60px;
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
   width: auto;
@@ -704,6 +710,7 @@ input:focus {
 /** SIDEBAR========*/
   
 .menu-wrap {
+    display: block;
     background-color: #900c3f;
     color:#ffffff;
     text-transform: uppercase;
