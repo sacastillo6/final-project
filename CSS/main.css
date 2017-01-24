@@ -403,6 +403,10 @@ input:focus {
 
 /* FOOTER  ================================================================ */
 
+footer {
+  background-color: #900c3f;
+}
+
 footer > p{
   margin: 0;
   padding: 0;
@@ -412,10 +416,6 @@ footer > p{
   display: block;
   font-size: 0.8em;
   line-height: 3.75em;
-  color: #17202A;
-}
-
-footer a:hover{
   color: #ffffff;
 }
 
@@ -720,7 +720,7 @@ input:focus {
     height: 100%;
     width: 280px;
     transform: translateX(-108%);
-    font-size: 1em;
+    font-size: 2.5em;
     font-weight: 700;
     overflow: auto;
     transition: .25s;
@@ -740,8 +740,12 @@ ul.menu2 {
   color: #ffffff;
 }
 
+.Menu-wrap ul li a:hover{
+  color: #b39eb5;
+}
+
 .menu-show {
-    margin-top:60px;
+    margin-top:10px;
     list-style: none;
     margin-left: 0;
     box-shadow: 4px 2px 15px 1px #B9ADAD;
