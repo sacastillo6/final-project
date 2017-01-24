@@ -572,10 +572,15 @@ input:focus {
   margin-bottom: 80px;
   margin-left: 8%;
   margin-right: 30%;
+
 }
 
-.blog > h1{
+.blog > h1, h2{
   text-transform: uppercase;
+}
+
+.blog > h2{
+  margin-left: 8%;
 }
 
 .blog >p{
@@ -590,6 +595,13 @@ input:focus {
   float: left;
   clear:both;
   display:block;
+}
+
+.comments{
+   margin-top:80px;
+  margin-bottom: 80px;
+  margin-left: 8%;
+  margin-right: 30%;
 }
 
 
